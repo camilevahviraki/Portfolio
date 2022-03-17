@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background: #1c1a19;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100vh;
+    height: 92px;
+    left: 0px;
+    top: 0px;
+    background: #3c3a39;
+  }  
