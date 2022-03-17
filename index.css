@@ -13,4 +13,56 @@ body {
     left: 0px;
     top: 0px;
     background: #3c3a39;
+  }
+  h1 {
+    position: static;
+    width: 327px;
+    height: 124px;
+  
+    font-family: "Crete Round";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0.37px;
+    color: #ff6b00;
+  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  h2 {
+    position: static;
+    width: 77px;
+    height: 24px;
+    left: 12px;
+    top: 10px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-top: 56px;
+    margin-left: 24px;
+  }
+  h3 {
+    position: static;
+    height: 27px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff5e1;
+  }
+  section {
+    margin-top: 92px;
+    position: static;
+    width: 327px;
   }  
