@@ -13,18 +13,15 @@
 
 
 
-## Getting Started
-
-**This is a design of my personnal portfolio page.**
-
-
+ ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
-
-### Usage
-
-Double click on index.html file
+- copy this link `https://github.com/camilevahviraki/Portfolio.git`.
+- get the directory that you want to clone the repository.
+- open the command prompt in this directory.
+- write `git clone https://github.com/camilevahviraki/Portfolio.git`.
+- go to the repository folder in your command prompt `cd Portfolio`
 
 
 
@@ -50,10 +47,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
 - Inspiration: Microverse
 - etc
 
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.# Portfolio
