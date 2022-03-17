@@ -65,4 +65,82 @@ body {
     margin-top: 92px;
     position: static;
     width: 327px;
+  }
+  p {
+    position: static;
+    width: 327px;
+    height: 123px;
+    left: 24px;
+    top: 295px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    z-index: 3;
+  }
+  .title1 {
+    width: 327px;
+    height: 124px;
+    margin-top: 90px;
+    padding-bottom: 0px;
+  }
+  .h3-tag {
+    margin-top: 12px;
+    width: 327px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 0px;
+  }
+  .links_png {
+    display: flex;
+    flex-direction: row;
+  }
+  .png_img {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+  }
+  .img1 {
+    width: 40px;
+    height: 40px;
+  }
+  .vector_img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /*  position: relative ;
+    top: 300px;
+    left: 150px;*/
+    z-index: 2;
+  
+    margin-top: -260px;
+  }
+  .vector {
+    position: relative;
+    right: -20px;
+  }
+  .img1:hover {
+    filter: sepia(100%) hue-rotate(142deg) saturate(500%);
+  }
+  
+  .hamburger {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    left: 58px;
+    top: 63px;
+  }
+  .selector2 {
+    position: relative;
+    width: 100px;
+    left: 155px;
+  }
+  .selector {
+    width: 120px;
+    align-items: baseline;
   }  
