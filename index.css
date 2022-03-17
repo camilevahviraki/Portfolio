@@ -131,7 +131,7 @@ li {
 .vector {
   position: absolute;
   top: 250px;
-  right: 0px;
+  right: 0;
 }
 
 button {
