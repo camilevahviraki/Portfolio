@@ -4,6 +4,7 @@ body {
   background: #1c1a19;
   align-items: center;
 }
+
 nav {
   display: flex;
   flex-direction: row;
@@ -17,6 +18,7 @@ nav {
   margin-bottom: 12px;
   box-sizing: border-box;
 }
+
 h1 {
   height: 127px;
   position: static;
@@ -31,6 +33,7 @@ h1 {
   flex: none;
   margin: 6px;
 }
+
 section {
   display: flex;
   flex-direction: column;
@@ -40,6 +43,7 @@ section {
   width: 100vw;
   box-sizing: border-box;
 }
+
 h2 {
   position: static;
   width: 77px;
@@ -55,6 +59,7 @@ h2 {
   padding-left: 24px;
   padding-top: 6px;
 }
+
 h3 {
   position: static;
   height: 27px;
@@ -66,6 +71,7 @@ h3 {
   color: #fff5e1;
   margin: 6px;
 }
+
 p {
   position: static;
   width: 327px;
@@ -83,6 +89,7 @@ p {
   z-index: 3;
   margin: 6px;
 }
+
 ul {
   width: 375px;
   list-style-type: none;
@@ -92,33 +99,40 @@ ul {
   padding-inline-start: 0;
   margin-left: 42px;
 }
+
 li {
   width: 40px;
   height: 40px;
 }
+
 .png_img {
   padding-left: 10px;
   padding-top: 10px;
   width: 20px;
   height: 20px;
 }
+
 .png_img:hover {
   filter: sepia(100%) hue-rotate(142deg) saturate(500%);
 }
+
 .hamburger {
   position: absolute;
   width: 16px;
   height: 12px;
   right: 24px;
 }
+
 .hamburger:hover {
   filter: sepia(100%) hue-rotate(142deg) saturate(500%);
 }
+
 .vector {
   position: absolute;
   top: 240px;
   right: 0;
 }
+
 button {
   border: none;
   padding: 0;
