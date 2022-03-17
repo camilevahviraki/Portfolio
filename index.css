@@ -10,8 +10,8 @@ nav {
   position: absolute;
   width: 100vw;
   height: 92px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   background: #3c3a39;
 }
 h1 {
@@ -85,14 +85,14 @@ p {
   width: 327px;
   height: 124px;
   margin-top: 90px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 .h3-tag {
   margin-top: 12px;
   width: 327px;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 0px;
+  padding-left: 0;
 }
 .links_png {
   display: flex;
