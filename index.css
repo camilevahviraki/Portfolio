@@ -22,7 +22,6 @@ nav {
 h1 {
   height: 127px;
   position: static;
-  width: 327px;
   font-family: "Crete Round", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -31,7 +30,7 @@ h1 {
   letter-spacing: 0.37px;
   color: #ff6b00;
   flex: none;
-  margin: 6px;
+  margin: 6px 24px;
 }
 
 section {
@@ -62,19 +61,19 @@ h2 {
 
 h3 {
   position: static;
+  width: 100%;
+  max-width: 100vh; 
   height: 27px;
-  width: 327px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   color: #fff5e1;
-  margin: 6px;
+  margin: 6px 0 6px 48px;
 }
 
 p {
   position: static;
-  width: 327px;
   height: 123px;
   left: 24px;
   top: 295px;
@@ -87,17 +86,19 @@ p {
   flex: none;
   flex-grow: 0;
   z-index: 3;
-  margin: 6px;
+  margin: 6px 24px;
 }
 
 ul {
-  width: 375px;
+  position: static;
+  width: 100%;
+  max-width: 100vh; 
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  margin: 6px;
+  margin: 6px 0 6px 40px;
   padding-inline-start: 0;
-  margin-left: 42px;
+  left: 12px;
 }
 
 li {
@@ -129,8 +130,8 @@ li {
 
 .vector {
   position: absolute;
-  top: 240px;
-  right: 0;
+  top: 250px;
+  right: 0px;
 }
 
 button {
