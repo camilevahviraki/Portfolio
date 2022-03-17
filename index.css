@@ -62,7 +62,7 @@ h2 {
 h3 {
   position: static;
   width: 100%;
-  max-width: 100vh; 
+  max-width: 100vh;
   height: 27px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -92,7 +92,7 @@ p {
 ul {
   position: static;
   width: 100%;
-  max-width: 100vh; 
+  max-width: 100vh;
   list-style-type: none;
   display: flex;
   flex-direction: row;
