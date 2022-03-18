@@ -1,0 +1,140 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background: #1c1a19;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+  height: 48px;
+  left: 0;
+  top: 0;
+  background: #3c3a39;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+h1 {
+  height: auto;
+  position: static;
+  font-family: "Crete Round", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  flex: none;
+  margin: 6px 24px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+  position: static;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+h2 {
+  position: static;
+  width: 77px;
+  height: 24px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  flex: none;
+  padding-left: 24px;
+  padding-top: 6px;
+}
+
+h3 {
+  position: static;
+  width: 100%;
+  max-width: 100vh;
+  height: auto;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff5e1;
+  margin: 6px 0 6px 48px;
+}
+
+p {
+  position: static;
+  height: auto;
+  left: 24px;
+  top: 295px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  flex: none;
+  flex-grow: 0;
+  z-index: 3;
+  margin: 6px 24px;
+}
+
+ul {
+  position: static;
+  width: 100%;
+  max-width: 100vh;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin: 6px 0 6px 40px;
+  padding-inline-start: 0;
+  left: 12px;
+}
+
+li {
+  width: 40px;
+  height: 40px;
+}
+
+.png_img {
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.png_img:hover {
+  filter: sepia(100%) hue-rotate(142deg) saturate(500%);
+}
+
+.hamburger {
+  position: absolute;
+  width: 16px;
+  height: 12px;
+  right: 24px;
+}
+
+.hamburger:hover {
+  filter: sepia(100%) hue-rotate(142deg) saturate(500%);
+}
+
+.vector {
+  position: absolute;
+  top: 250px;
+  right: 0;
+}
+
+button {
+  border: none;
+  padding: 0;
+}
