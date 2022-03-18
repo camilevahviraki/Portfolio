@@ -1,7 +1,6 @@
 body {
   display: flex;
   flex-direction: column;
-  background: #1c1a19;
   align-items: center;
 }
 
@@ -19,7 +18,7 @@ nav {
   box-sizing: border-box;
 }
 
-h1 {
+.h1_1 {
   height: auto;
   position: static;
   font-family: "Crete Round", Arial, Helvetica, sans-serif;
@@ -29,21 +28,23 @@ h1 {
   line-height: 64px;
   letter-spacing: 0.37px;
   color: #ff6b00;
-  flex: none;
   margin: 6px 24px;
 }
 
-section {
+.section1 {
+  min-height: 100vh;
+  max-height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 120px;
+  padding-top: 120px;
   position: static;
   width: 100vw;
   box-sizing: border-box;
+  background: #1c1a19;
 }
 
-h2 {
+.h2_1 {
   position: static;
   width: 77px;
   height: 24px;
@@ -62,7 +63,7 @@ h2 {
 h3 {
   position: static;
   width: 100%;
-  max-width: 100vh;
+  max-height: 100vh;
   height: auto;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -72,7 +73,7 @@ h3 {
   margin: 6px 0 6px 48px;
 }
 
-p {
+.p1 {
   position: static;
   height: auto;
   left: 24px;
@@ -89,7 +90,7 @@ p {
   margin: 6px 24px;
 }
 
-ul {
+.links_png {
   position: static;
   width: 100%;
   max-width: 100vh;
@@ -101,7 +102,7 @@ ul {
   left: 12px;
 }
 
-li {
+.li_png {
   width: 40px;
   height: 40px;
 }
@@ -134,7 +135,441 @@ li {
   right: 0;
 }
 
-button {
+.button1 {
   border: none;
   padding: 0;
+}
+
+.h1_2 {
+  width: 84%;
+  min-height: 83px;
+  font-family: "Crete Round", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #1d1b1a;
+  order: 0;
+  align-self: start;
+  margin: 120px 24px 80px 24px;
+  padding-inline-start: 0;
+  border-bottom: solid #212121 1px;
+  padding-bottom: 24px;
+}
+
+.image-section2 {
+  margin: 0;
+  margin-bottom: 6px;
+  max-width: 100%;
+}
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.h2_2 {
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+  margin: 18px 0 6px 0;
+  align-self: start;
+  padding-inline-start: 0;
+  padding-left: 24px;
+}
+.p2 {
+  height: auto;
+  font-family: "Inter", "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 6px 24px;
+  color: #091e42;
+}
+
+.buttons_s2 {
+  position: static;
+  max-width: 100vh;
+  min-width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin: 6px 0 6px 40px;
+  padding-inline-start: 0;
+  left: 12px;
+}
+
+.buttonL {
+  padding: 10px 12px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+  margin: 0 6px;
+  background: #fff;
+  border: 1px solid #8993a4;
+  box-sizing: border-box;
+}
+
+.buttonEn {
+  border: 1px solid #8993a4;
+  box-sizing: border-box;
+  background: #ff6b00;
+  color: #fff;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 6px 10px 6px 24px;
+  padding: 10px 12px 10px 12px;
+  align-self: start;
+}
+
+.section_M {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
+  min-height: 386px;
+  max-height: auto;
+  background: linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 61.94%
+    ),
+    url(./images/portfolioBackground.png);
+  margin: 24px;
+  background-size: 100% 100%;
+}
+.h1_3 {
+  font-family: "Crete Round", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  align-self: start;
+  margin: 84px 16px 12px 16px;
+}
+
+.p_sectionM {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin: 0 16px 6px 16px;
+}
+
+.ul_sectionM {
+  position: static;
+  width: 100%;
+  max-width: 100vh;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin: 6px 0 6px 10px;
+  padding-inline-start: 0;
+  left: 12px;
+}
+
+.butn_M {
+  background: rgba(255, 255, 255, 0.24);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  color: #fff;
+  margin: 6px;
+  border: none;
+}
+
+.btn_M_en {
+  position: absolute;
+  bottom: 0px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  display: inline-flex;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  height: 48px;
+  background: #ff6b00;
+  width: 100%;
+  padding-top: 8px;
+  border: none;
+}
+
+.section_aboutMe {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1c1a19;
+}
+
+.h2_4 {
+  font-family: "Crete Round", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  align-self: start;
+  margin: 120px 24px 12px 24px;
+}
+
+.p_4 {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  margin: 12px 24px 12px 24px;
+}
+
+.btn_about {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  padding: 12px;
+  background: #ff6b00;
+  align-self: start;
+  margin: 12px 0 209px 24px;
+}
+
+.bottom_line {
+  width: 85%;
+  border: 1px solid #fff;
+}
+
+.languages {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0;
+}
+
+.languages_title {
+  display: flex;
+  flex-direction: row;
+}
+
+.h1_5 {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  margin: 0;
+  justify-self: center;
+}
+
+.lng_elmnt {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  text-align: center;
+  color: #fff;
+}
+
+.rectangle {
+  margin-top: 11px;
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+}
+
+.rectangle1 {
+  margin-top: 6px;
+  margin-right: 12px;
+  width: 30px;
+  height: 30px;
+}
+
+.img_about_me {
+  position: absolute;
+  align-self: flex-end;
+  margin-top: 390px;
+}
+
+.languages_div {
+  margin-top: 136px;
+  margin-bottom: 136px;
+}
+
+.btn_about:hover {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
+}
+
+.btn_M_en:hover {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
+}
+
+.buttonL:hover {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
+}
+
+.buttonEn:hover {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
+}
+
+.button1:hover {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
+}
+
+.butn_M:hover {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
+}
+.btn_about:active {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #f4f1f0;
+  background: #e05304;
+}
+
+.btn_M_en:active {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #f4f1f0;
+  background: #e05304;
+}
+
+.butn_M:active {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #f4f1f0;
+  background: #e05304;
+}
+
+.button1:active {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #f4f1f0;
+  background: #e05304;
+}
+
+.buttonEn:active {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #f4f1f0;
+  background: #e05304;
+}
+
+.buttonL:active {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #f4f1f0;
+  background: #e05304;
 }
