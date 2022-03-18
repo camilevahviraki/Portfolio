@@ -20,7 +20,7 @@ nav {
 }
 
 h1 {
-  height: 127px;
+  height: auto;
   position: static;
   font-family: "Crete Round", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -63,7 +63,7 @@ h3 {
   position: static;
   width: 100%;
   max-width: 100vh;
-  height: 27px;
+  height: auto;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -74,7 +74,7 @@ h3 {
 
 p {
   position: static;
-  height: 123px;
+  height: auto;
   left: 24px;
   top: 295px;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
