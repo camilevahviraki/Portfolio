@@ -2,6 +2,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
+  margin:0;
 }
 
 nav {
@@ -124,8 +126,20 @@ h3 {
   right: 24px;
 }
 
-.hamburger:hover {
-  filter: sepia(100%) hue-rotate(142deg) saturate(500%);
+.hamburger:hover { overflow: hidden; 
+  min-height: 83px;
+  font-family: "Crete Round", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #1d1b1a;
+  order: 0;
+  align-self: start;
+  margin: 120px 24px 80px 24px;
+  padding-inline-start: 0;
+  border-bottom: solid #212121 1px;
+  padding-bottom: 24px;
 }
 
 .vector {
@@ -321,6 +335,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   background-color: #1c1a19;
+  margin-top: 120px;
 }
 
 .h2_4 {
@@ -360,6 +375,7 @@ h3 {
   background: #ff6b00;
   align-self: start;
   margin: 12px 0 209px 24px;
+  border:none;
 }
 
 .bottom_line {
@@ -382,7 +398,7 @@ h3 {
 
 .h1_5 {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-style: normal;
+  font-style: gnormal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
