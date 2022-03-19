@@ -63,7 +63,7 @@ nav {
 
 h3 {
   position: static;
-  width: 100%;
+  width: auto;
   max-height: 100vh;
   height: auto;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -71,7 +71,9 @@ h3 {
   font-weight: 700;
   font-size: 24px;
   color: #fff5e1;
-  margin: 6px 0 6px 48px;
+  margin: 6px 0 6px 24px;
+  align-self: start;
+
 }
 
 .p1 {
@@ -93,14 +95,14 @@ h3 {
 
 .links_png {
   position: static;
-  width: 100%;
-  max-width: 100vh;
+  width: auto;
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  margin: 6px 0 6px 40px;
+  margin: 6px 0 6px 0;
   padding-inline-start: 0;
-  left: 12px;
+  padding-left: 24px;
+  align-self: start;
 }
 
 .li_png {
@@ -208,15 +210,16 @@ h3 {
 }
 
 .buttons_s2 {
-  position: static;
-  max-width: 100vh;
-  min-width: 100%;
+  width:auto;
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  margin: 6px 0 6px 40px;
+  margin: 6px 0 6px 0;
   padding-inline-start: 0;
   left: 12px;
+  align-self: start;
+  padding-left: 18px;
+  
 }
 
 .buttonL {
