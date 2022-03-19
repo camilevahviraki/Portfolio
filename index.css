@@ -73,7 +73,6 @@ h3 {
   color: #fff5e1;
   margin: 6px 0 6px 24px;
   align-self: start;
-
 }
 
 .p1 {
@@ -210,7 +209,7 @@ h3 {
 }
 
 .buttons_s2 {
-  width:auto;
+  width: auto;
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -219,7 +218,6 @@ h3 {
   left: 12px;
   align-self: start;
   padding-left: 18px;
-  
 }
 
 .buttonL {
