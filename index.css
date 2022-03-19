@@ -262,6 +262,7 @@ h3 {
 }
 
 .h1_3 {
+  min-height: 81px;
   font-family: "Crete Round", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -273,6 +274,7 @@ h3 {
 }
 
 .p_sectionM {
+  height: 87px;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
