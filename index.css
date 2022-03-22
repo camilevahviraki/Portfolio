@@ -588,3 +588,55 @@ h3 {
   color: #f4f1f0;
   background: #e05304;
 }
+
+.contact_form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p_contact_form {
+  font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 44px;
+text-align: center;
+color: #172B4D;
+position: static;
+width: 327px;
+height: 216px;
+left: 0px;
+top: 0px;
+margin: 120px 24px 15px 24px;
+}
+
+.form_list {
+  margin-top: 73px;
+}
+
+.form_list li{
+  list-style-type: none;
+}
+
+.form_list input{
+  border: none;
+  border-bottom: 1px solid #DBD8D7;
+  margin-bottom: 40px;
+  margin-right: 24px;
+  width: 327px;
+  padding-bottom: 14px;
+}
+
+.form_list textarea{
+  padding-top: 14px;
+  width: 327px;
+  height: 114px;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+color: #3C3A39;
+background: #fbf8f8;
+}
