@@ -274,56 +274,26 @@ h3 {
 
 #section_m2 {
   position: relative;
-  background:
-   linear-gradient(
-      179.4deg,
-      rgba(38, 38, 38, 0) 0.81%,
-      rgba(38, 38, 38, 0.9) 84.03%
-    ),
-    url("./images_desk/img_backgroud2.png");
+  background: linear-gradient(179.4deg, rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.9) 84.03%), url("./images_desk/img_backgroud2.png");
 }
 
 #section_m3 {
   position: relative;
-  background: 
-   linear-gradient(
-      179.4deg,
-      rgba(38, 38, 38, 0) 0.81%,
-      rgba(38, 38, 38, 0.9) 84.03%
-    ),
-    url("./images_desk/img_backgroud3.png");
+  background: linear-gradient(179.4deg, rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.9) 84.03%), url("./images_desk/img_backgroud3.png");
 }
 
 #section_m4 {
-  background: 
-   linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 84.18%
-    ),
-    url("./images_desk/img_backgroud1.png");
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 84.18%), url("./images_desk/img_backgroud1.png");
 }
 
 #section_m5 {
   position: relative;
-  background:
-   linear-gradient(
-      179.4deg,
-      rgba(38, 38, 38, 0) 0.81%,
-      rgba(38, 38, 38, 0.9) 84.03%
-    ),
-    url("./images_desk/img_backgroud2.png");
+  background: linear-gradient(179.4deg, rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.9) 84.03%), url("./images_desk/img_backgroud2.png");
 }
 
 #section_m6 {
   position: relative;
-  background:
-   linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 84.18%
-    ),
-    url("./images_desk/img_backgroud3.png");
+  background: linear-gradient( 180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 84.18%), url("./images_desk/img_backgroud3.png");
 }
 
 .button_section_M_id1 {
