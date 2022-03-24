@@ -53,6 +53,11 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
+  order: 1;
+}
+
+.nav_list li {
+  list-style-type: none;
 }
 
 .nav_menu {
@@ -97,6 +102,7 @@ nav {
 .p_section12 {
   margin-left: 57px;
   width: 490px;
+  order: 2;
 }
 
 .h1_1 {
