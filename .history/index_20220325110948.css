@@ -50,7 +50,6 @@ nav {
   background-image: url('./images/Illustration.png');
   background-repeat: no-repeat;
   background-position-x: right;
-  background-position-y: top 260px;
 }
 
 .h2_1 {
@@ -67,7 +66,6 @@ nav {
   flex: none;
   padding-left: 24px;
   padding-top: 6px;
-  text-decoration: none;
 }
 
 h3 {
@@ -137,8 +135,19 @@ h3 {
 }
 
 .hamburger:hover {
-  width: 18px;
-  height: 13px;
+  min-height: 83px;
+  font-family: "Crete Round", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #1d1b1a;
+  order: 0;
+  align-self: start;
+  margin: 120px 24px 80px 24px;
+  padding-inline-start: 0;
+  border-bottom: solid #212121 1px;
+  padding-bottom: 24px;
 }
 
 .vector {
@@ -316,10 +325,6 @@ h3 {
   color: #fff;
   margin: 6px;
   border: none;
-}
-
-#section_m1 {
-  width: calc(100vw - 48px);
 }
 
 .button_section_M_id1 {
@@ -633,7 +638,7 @@ h3 {
   text-align: center;
   color: #172b4d;
   position: static;
-  width: calc(100vw - 48px);
+  width: 327px;
   height: 216px;
   margin: 120px 24px 15px 24px;
 }
@@ -646,7 +651,6 @@ h3 {
   padding-inline-start: 0;
   width: calc(100vw - 48px);
   margin-bottom: 100px;
-  margin-left: 24px;
 }
 
 .form_list li {
