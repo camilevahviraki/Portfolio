@@ -296,7 +296,7 @@ h3 {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  margin: 6px 0 12px 10px;
+  margin: 6px 0 6px 10px;
   padding-inline-start: 0;
   left: 12px;
 }
