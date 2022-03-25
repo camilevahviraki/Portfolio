@@ -106,14 +106,14 @@ nav {
 }
 
 .h1_1 {
-  width: 300px;
+  width: 400px;
   height: auto;
   position: static;
   font-family: "Crete Round", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 56px;
-  line-height: 64px;
+  font-size: 72px;
+  line-height: 82px;
   letter-spacing: 0.37px;
   color: #ff6b00;
   margin: 0 0 18px 0;
@@ -139,8 +139,8 @@ h3 {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 32px;
   color: #fff;
   flex: none;
   flex-grow: 0;
@@ -194,7 +194,6 @@ h3 {
 
 .text_flex {
   width: calc(100% - (100vw * 0.311111) - 24px);
-  border: 1px solid black;
 }
 
 .h2_2 {
@@ -270,7 +269,6 @@ h3 {
 }
 
 .buttonEn {
-  border: 1px solid #8993a4;
   box-sizing: border-box;
   background: #ff6b00;
   color: #fff;
@@ -284,6 +282,7 @@ h3 {
   margin: 6px 10px 6px 0;
   padding: 10px 12px 10px 12px;
   align-self: start;
+  border: none;
 }
 
 .my_works_grid {
@@ -310,6 +309,10 @@ h3 {
 #section_m1 {
   position: relative;
   background-image: url("./images_desk/img_backgroud1.png");
+}
+
+.M1 {
+  border: 1px solid black;
 }
 
 .M1 p {
