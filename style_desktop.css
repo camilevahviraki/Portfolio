@@ -15,7 +15,6 @@ body {
   width: 100vw;
   margin-left: 0;
   background-image: url('./images_desk/Illustration-header@2x.png');
-  background-position: absolute;
   background-size: 540px;
   background-repeat: no-repeat;
   background-position-x: right;
@@ -220,7 +219,7 @@ h3 {
 
 .image-section2 {
   padding-right: 24px;
-  width: calc(100vw * 0.475) ;
+  width: calc(100vw * 0.475);
   height: calc(100vw * 0.311111);
 }
 
@@ -252,7 +251,7 @@ h3 {
 
   .my_works_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr!important;
+    grid-template-columns: 1fr 1fr !important;
   }
 }
 
