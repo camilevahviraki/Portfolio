@@ -21,9 +21,9 @@
         <button class="nav_menu1" onclick="showNav();" id="clickMe1"><img src="./images/clipart365828.png" alt="" class="hamburger" /></button>
         <button class="nav_menu1" onclick="hideNav();" id="clickMe2"><img src="./images/HideNavIcon.png" alt="" class="hamburger2" /></button>
         <ul class="nav_list" id="My_navList">
-            <li class="li_nav"><a href="#" class="nav_menu">Portfolio</a></li>
-            <li class="li_nav"><a href="#" class="nav_menu">About</a></li>
-            <li class="li_nav"><a href="#" class="nav_menu">Contact</a></li>
+            <li class="li_nav"><a href="#section2" class="nav_menu" onclick="hideNav();">Portfolio</a></li>
+            <li class="li_nav"><a href="#section_aboutMe" class="nav_menu" onclick="hideNav();">About</a></li>
+            <li class="li_nav"><a href="#contact_form" class="nav_menu" onclick="hideNav();">Contact</a></li>
             <li class="li_nav" id="UnionIcon">
                 <a href="#" class="nav_menu"><img src="./images_desk/Union.png" alt="" class="hamburger2" /></a>
             </li>
@@ -32,15 +32,15 @@
     <nav class='NavBarDesk'>
         <a href="#" class="h2_1">Camilux</a>
         <ul class="nav_list">
-            <li class="li_nav"><a href="#" class="nav_menu">Portfolio</a></li>
-            <li class="li_nav"><a href="#" class="nav_menu">About</a></li>
-            <li class="li_nav"><a href="#" class="nav_menu">Contact</a></li>
+            <li class="li_nav"><a href="#section2" class="nav_menu" >Portfolio</a></li>
+            <li class="li_nav"><a href="#section_aboutMe" class="nav_menu" >About</a></li>
+            <li class="li_nav"><a href="#contact_form" class="nav_menu" >Contact</a></li>
             <li class="li_nav">
-                <a href="#" class="nav_menu"><img src="./images_desk/Union.png" alt="" class="hamburger2" /></a>
+                <a href="#contact_form" class="nav_menu"><img src="./images_desk/Union.png" alt="" class="hamburger2" /></a>
             </li>
         </ul>
     </nav>
-    <section class="section1">
+    <section class="section1" id="section1">
         <div class="p_section12">
             <h1 class="h1_1">Hey there. I'm Camile</h1>
 
@@ -79,8 +79,8 @@
         </ul>
 
     </section>
-    <section class="my_projects">
-        <section class="section2">
+    <section class="my_projects" id="my_projects">
+        <section class="section2" id="section2">
             <div class="my_works_title">
                 <h2 class="h1_2">My Recent Works</h2>
                 <div class="yellow_line"></div>
@@ -179,7 +179,7 @@
         </section>
     </section>
 
-    <section class="section_aboutMe">
+    <section class="section_aboutMe" id="section_aboutMe">
         <h2 class="h2_4">About me</h2>
         <p class="p_4">
             Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
@@ -257,7 +257,7 @@
             </div>
         </div>
     </section>
-    <section class="contact_form">
+    <section class="contact_form" id="contact_form">
         <section class="contacts_and_sumary">
             <p class="p_contact_form">
                 I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
