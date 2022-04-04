@@ -10,18 +10,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Poppins:ital@0;1&family=Roboto:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" media="screen and (max-width: 767px)" href="index.css" />
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="style_desktop.css" />
+
     <title>Portfolio</title>
 </head>
 
 <body>
     <nav>
         <a href="#" class="h2_1">Camilux</a>
-        <a href="#" class="nav_menu"><img src="./images/clipart365828.png" alt="" class="hamburger" /></a>
-        <ul class="nav_list">
-            <li><a href="#" class="nav_menu">Portfolio1</a></li>
-            <li><a href="#" class="nav_menu">About</a></li>
-            <li><a href="#" class="nav_menu">Contact</a></li>
-            <li>
+        <script type="text/javascript" src="index.js"></script>
+        <button class="nav_menu1" onclick="showNav();" id="clickMe1"><img src="./images/clipart365828.png" alt="" class="hamburger" /></button>
+        <button class="nav_menu1" onclick="hideNav();" id="clickMe2"><img src="./images/HideNavIcon.png" alt="" class="hamburger2" /></button>
+        <ul class="nav_list" id="My_navList">
+            <li class="li_nav"><a href="#" class="nav_menu">Portfolio</a></li>
+            <li class="li_nav"><a href="#" class="nav_menu">About</a></li>
+            <li class="li_nav"><a href="#" class="nav_menu">Contact</a></li>
+            <li class="li_nav" id="UnionIcon">
                 <a href="#" class="nav_menu"><img src="./images_desk/Union.png" alt="" class="hamburger2" /></a>
             </li>
         </ul>
@@ -78,7 +81,7 @@
                     <p class="p2">
                         A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
                     </p>
-                    <ul class="buttons_s2">
+                    <ul class="buttons_s2" id="My_NavBar">
                         <li class="bt_s2"><button class="buttonL">css</button></li>
                         <li class="bt_s2"><button class="buttonL">html</button></li>
                         <li class="bt_s2"><button class="buttonL">bootstrap</button></li>
