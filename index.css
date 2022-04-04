@@ -20,6 +20,10 @@ nav {
     box-sizing: border-box;
 }
 
+.NavBarDesk {
+    display: none;
+}
+
 .nav_list {
     display: none;
     flex-direction: column;

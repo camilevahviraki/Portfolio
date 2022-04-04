@@ -36,6 +36,10 @@ nav {
     z-index: 2;
 }
 
+.NavBar1 {
+    display: none;
+}
+
 .h2_1 {
     position: static;
     width: 77px;
