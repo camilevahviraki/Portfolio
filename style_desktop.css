@@ -14,7 +14,7 @@ body {
   min-height: 100vh;
   width: 100vw;
   margin-left: 0;
-  background-image: url('./images_desk/Illustration-header@2x.png');
+  background-image: url("./images_desk/Illustration-header@2x.png");
   background-size: 540px;
   background-repeat: no-repeat;
   background-position-x: right;
@@ -34,6 +34,10 @@ nav {
   margin-bottom: 12px;
   box-sizing: border-box;
   z-index: 2;
+}
+
+.NavBar1 {
+  display: none;
 }
 
 .h2_1 {
@@ -59,10 +63,15 @@ nav {
   flex-direction: row;
   align-items: center;
   order: 1;
+  padding-top: 0 !important;
 }
 
 .nav_list li {
   list-style-type: none;
+}
+
+.nav_menu1 {
+  display: none;
 }
 
 .nav_menu {
@@ -468,7 +477,7 @@ h3 {
 }
 
 .img_about_me {
-  content: url('./images_desk/Frame_about_me.png');
+  content: url("./images_desk/Frame_about_me.png");
   position: absolute;
   align-self: flex-end;
   margin-top: 99px;
