@@ -884,7 +884,7 @@ h3 {
 }
 
 .img_popUp {
- width: 100%;
+  width: 100%;
 }
 
 .p_popUp {
@@ -938,8 +938,8 @@ h3 {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #3C3A39;
-  border: 1px solid #DFE1E6;
+  color: #3c3a39;
+  border: 1px solid #dfe1e6;
   padding: 16px;
   background-color: #fff;
   margin-right: 10px;
@@ -956,7 +956,7 @@ h3 {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
   margin-left: 16px;
   height: 82px;
   margin-top: 16px;
@@ -981,7 +981,7 @@ h3 {
 .Align_FlexImg {
   display: grid !important;
   grid-column-gap: 25px !important;
-  grid-template-columns: calc(0.590 * 100%) calc(0.387 * 100%) !important;
+  grid-template-columns: calc(0.59 * 100%) calc(0.387 * 100%) !important;
   margin: 24px;
 }
 

@@ -806,14 +806,14 @@ h3 {
 
 .img_popUp {
   width: calc(100vw - 64px);
-  height: calc((100vw -64px) * 0.707);
+  height: calc((100vw - 64px) * 0.707);
   margin-left: 16px;
 }
 
 .p_popUp {
   width: calc(100vw - 64px);
   margin-left: 16px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -856,8 +856,8 @@ h3 {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #3C3A39;
-  border: 1px solid #DFE1E6;
+  color: #3c3a39;
+  border: 1px solid #dfe1e6;
   padding: 16px;
   background-color: #fff;
   margin-right: 10px;
@@ -874,7 +874,7 @@ h3 {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
   margin-left: 16px;
   height: 82px;
   margin-top: 16px;
