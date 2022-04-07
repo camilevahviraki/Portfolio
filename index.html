@@ -25,15 +25,7 @@
     <title>Portfolio</title>
   </head>
 
-  <body
-    onload="displayPrjct('Profesional Art Printing Data More', 'Ipsum has been the industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type ','./images/portfolioBackground.png','1');
-                displayPrjct('Data Dashboard Healthcare', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industrys  ','./images/portfolioBackground.png','2');
-                displayPrjct('Website Protfolio ', 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard ','./images/portfolioBackground.png','3');
-                displayPrjct('Profesional Art Printing Data More', 'Ipsum has been the industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type ','./images/portfolioBackground.png','4');
-                displayPrjct('Data Dashboard Healthcare', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industrys  ','./images/portfolioBackground.png','5');
-                displayPrjct('Website Protfolio ', 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard ','./images/portfolioBackground.png','6');
-                "
-  >
+  <body onload=" wrapProjectsCards();">
     <nav class="NavBar1" id="NavBar1">
       <a href="#" class="h2_1">Camilux</a>
       <button class="nav_menu1" onclick="showNav();" id="clickMe1">
@@ -245,7 +237,7 @@
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
         </p>
-        <form action="https://formspree.io/f/xgedzqjv" method="POST">
+        <form action="https://formspree.io/f/xgedzqjv" method="POST" id="signup">
           <ul class="form_list">
             <li>
               <input
@@ -274,6 +266,7 @@
             </li>
             <li>
               <button class="butn_submit" type="submit">Get in touch</button>
+              <p id="error_message"></p>
             </li>
           </ul>
         </form>
