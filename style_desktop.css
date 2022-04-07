@@ -369,7 +369,7 @@ h3 {
   display: none !important;
 }
 
-#btnEnSectionM1 {
+#btnEnSectionMDesk1 {
   display: flex !important;
 }
 
@@ -1014,4 +1014,22 @@ h3 {
   letter-spacing: 0.03em;
   color: #f4f1f0;
   background: #e05304;
+}
+
+.btn_M_enDesk {
+  display: none;
+  bottom: 0;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  height: 48px;
+  background: #ff6b00;
+  width: 100%;
+  padding-top: 8px;
+  border: none;
 }

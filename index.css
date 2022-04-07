@@ -919,3 +919,7 @@ h3 {
   color: #f4f1f0;
   background: #e05304;
 }
+
+.btn_M_enDesk {
+  display: none !important;
+}
