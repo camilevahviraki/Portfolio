@@ -61,46 +61,8 @@ function hideNav() {
 showNav();
 hideNav();
 
-function displayPrjct(title, description, backgroundUrl, idHtml) {
-  const projectDisplay = {
-    idHtml,
-    title,
-    description,
-    backgroundUrl,
-    popUpText:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  };
-  const sectionMultiple = document.createElement('div');
-  const pSectionM = document.createElement('p');
-  const h1SectionM = document.createElement('h2');
-  const UlSectionM = document.createElement('ul');
-  const li1SectionM = document.createElement('li');
-  const li2SectionM = document.createElement('li');
-  const li3SectionM = document.createElement('li');
-  const btn1SectionM = document.createElement('button');
-  const btn2SectionM = document.createElement('button');
-  const btn3SectionM = document.createElement('button');
-  const btnEnSectionM = document.createElement('button');
-
-  sectionMultiple.classList.add('section_M');
-  pSectionM.classList.add('p_sectionM');
-  h1SectionM.classList.add('h1_3');
-  UlSectionM.classList.add('ul_sectionM');
-  li1SectionM.classList.add('li_sectionM');
-  li2SectionM.classList.add('li_sectionM');
-  li3SectionM.classList.add('li_sectionM');
-  btn1SectionM.classList.add('butn_M');
-  btn2SectionM.classList.add('butn_M');
-  btn3SectionM.classList.add('butn_M');
-  btnEnSectionM.classList.add('btn_M_en');
-  sectionMultiple.setAttribute('id', `section_m${projectDisplay.idHtml}`);
-  UlSectionM.setAttribute('id', `ul_section_m${projectDisplay.idHtml}`);
-  pSectionM.setAttribute('id', `pSectionM${projectDisplay.idHtml}`);
-  h1SectionM.setAttribute('id', `h1SectionM${projectDisplay.idHtml}`);
-  btnEnSectionM.setAttribute('id', `btnEnSectionM${projectDisplay.idHtml}`);
-
+function displayPrjct(title, description, popUpText, backgroundUrl, idHtml) {
   const sectionProjects = document.getElementById('Sections_M_Container');
-
   const body = document.querySelector('body');
   const section1 = document.getElementById('section1');
   const MainSectionproject = document.getElementById('my_projects');
@@ -109,88 +71,292 @@ function displayPrjct(title, description, backgroundUrl, idHtml) {
   const NavAll2 = document.getElementById('NavBar2');
   const NavAll1 = document.getElementById('NavBar1');
 
-  sectionProjects.appendChild(sectionMultiple);
-  sectionMultiple.append(h1SectionM, pSectionM, UlSectionM, btnEnSectionM);
-  UlSectionM.append(li1SectionM, li2SectionM, li3SectionM);
-  li1SectionM.appendChild(btn1SectionM);
-  li2SectionM.appendChild(btn2SectionM);
-  li3SectionM.appendChild(btn3SectionM);
+  const AllTags = [
+    {
+      type: 'section',
+      name: 'sectionMultiple',
+      class: 'section_M',
+      id: `section_m${idHtml}`,
+    },
+    {
+      type: 'p',
+      name: 'pSectionM',
+      class: 'p_sectionM',
+      texte: `${description}`,
+      id: `pSectionM${idHtml}`,
+    },
+    {
+      type: 'h2',
+      name: 'h1SectionM',
+      class: 'h1_3',
+      texte: `${title}`,
+      id: `h1SectionM${idHtml}`,
+    },
+    {
+      type: 'ul',
+      name: ' UlSectionM',
+      class: 'ul_sectionM',
+      id: `ul_section_m${idHtml}`,
+    },
+    {
+      name: 'li1SectionM',
+      class: 'li_sectionM',
+      type: 'li',
+    },
+    {
+      name: 'li2SectionM',
+      class: 'li_sectionM',
+      type: 'li',
+    },
+    {
+      name: 'li3SectionM',
+      class: 'li_sectionM',
+      type: 'li',
+    },
+    {
+      name: 'btn1SectionM',
+      class: 'butn_M',
+      type: 'button',
+      texte: 'Html',
+    },
+    {
+      name: 'btn2SectionM',
+      class: 'butn_M',
+      type: 'button',
+      texte: 'Bootstrap',
+    },
+    {
+      name: 'btn3SectionM',
+      class: 'butn_M',
+      type: 'button',
+      texte: 'Ruby',
+    },
+    {
+      name: 'btnEnSectionM',
+      class: 'btn_M_en',
+      type: 'button',
+      texte: 'See project',
+      id: `btnEnSectionM${idHtml}`,
+    },
+    {
+      name: 'btnEnSectionMDesk',
+      class: 'btn_M_enDesk',
+      type: 'button',
+      texte: 'See project',
+      id: `btnEnSectionMDesk${idHtml}`,
+    },
+  ];
 
-  btn1SectionM.innerText = 'Html';
-  btn2SectionM.innerText = 'Bootstrap';
-  btn3SectionM.innerText = 'Ruby';
-  btnEnSectionM.innerText = 'See Project';
-  pSectionM.innerText = projectDisplay.description;
-  h1SectionM.innerText = projectDisplay.title;
+  function createEveryTag() {
+    const output = [];
+    for (let i = 0; i < AllTags.length; i += 1) {
+      AllTags[i].name = document.createElement(AllTags[i].type);
+      AllTags[i].name.classList.add(AllTags[i].class);
 
-  sectionMultiple.style.background = `linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(${projectDisplay.backgroundUrl})`;
-  sectionMultiple.style.backgroundSize = '100% 100%';
-  btnEnSectionM.addEventListener('click', () => {
-    const closePopUp = document.createElement('button');
-    const closeImg = document.createElement('img');
-    const btn1PopUp = document.createElement('button');
-    const btn2PopUp = document.createElement('button');
-    const textPopUp = document.createElement('p');
-    const titlePopUp = document.createElement('h2');
-    const imagePopUp = document.createElement('img');
-    const githubIcon = document.createElement('img');
-    const liveIcon = document.createElement('img');
-    const containerPopUp = document.createElement('div');
-    const AlignFlexImg = document.createElement('div');
-    const textPopUpDiv = document.createElement('div');
-    const btn1P = document.createElement('button');
-    const btn2P = document.createElement('button');
-    const btn3P = document.createElement('button');
-    const ulBtnP = document.createElement('div');
-    const titleAndIcon = document.createElement('div');
-    const btnsList = document.createElement('div');
+      if (Object.prototype.hasOwnProperty.call(AllTags[i], 'id')) {
+        AllTags[i].name.setAttribute('id', AllTags[i].id);
+      } else {
+        console.log(`No id on object ${AllTags[i].name} `);
+      }
 
-    const textbtn1 = document.createElement('p');
-    const textbtn2 = document.createElement('p');
+      if (Object.prototype.hasOwnProperty.call(AllTags[i], 'texte')) {
+        AllTags[i].name.innerText = AllTags[i].texte;
+      } else {
+        console.log('No text on object ');
+      }
 
-    closeImg.src = 'images/HideNavIcon.png';
-    imagePopUp.src = 'images/ImagePopUp.png';
-    liveIcon.src = 'images/IconLivePopUp.png';
-    githubIcon.src = 'images/GithubPopUp.png';
+      output.push(AllTags[i].name);
+    }
 
-    btnsList.classList.add('btns_List');
-    closeImg.classList.add('close_popUp');
-    closePopUp.classList.add('btn1_popUp');
-    btn1PopUp.classList.add('btn1_popUp');
-    btn2PopUp.classList.add('btn1_popUp');
-    textPopUp.classList.add('p_popUp');
-    titlePopUp.classList.add('h1_popUp');
-    imagePopUp.classList.add('img_popUp');
-    githubIcon.classList.add('icon_popUp');
-    liveIcon.classList.add('icon_popUp');
-    containerPopUp.classList.add('container_popUp');
-    AlignFlexImg.classList.add('Align_FlexImg');
-    textPopUpDiv.classList.add('q1');
-    btn1P.classList.add('q2');
-    btn2P.classList.add('q2');
-    btn3P.classList.add('q2');
-    ulBtnP.classList.add('ul_btnP');
-    textbtn1.classList.add('text_btn');
-    textbtn2.classList.add('text_btn');
-    titleAndIcon.classList.add('titile_and_icon');
+    return output;
+  }
+  let myTags = {};
+  myTags = createEveryTag();
+  console.log(myTags);
 
-    body.appendChild(containerPopUp);
-    containerPopUp.append(titleAndIcon, ulBtnP, AlignFlexImg);
-    titleAndIcon.append(closeImg, titlePopUp);
-    ulBtnP.append(btn1P, btn2P, btn3P);
-    AlignFlexImg.append(imagePopUp, textPopUpDiv);
-    textPopUpDiv.append(textPopUp, btnsList);
-    btnsList.append(btn1PopUp, btn2PopUp);
-    btn1PopUp.append(textbtn1, liveIcon);
-    btn2PopUp.append(textbtn2, githubIcon);
+  const projectDisplay = {
+    idHtml,
+    title,
+    description,
+    backgroundUrl,
+    popUpText:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+  };
+  const btnEnSectionMDesk = myTags[11];
+  const sectionMultiple = myTags[0];
+  sectionProjects.appendChild(myTags[0]);
+  myTags[0].append(myTags[2], myTags[1], myTags[3], myTags[10], myTags[11]);
+  myTags[3].append(myTags[4], myTags[5], myTags[6]);
+  myTags[4].appendChild(myTags[7]);
+  myTags[5].appendChild(myTags[8]);
+  myTags[6].appendChild(myTags[9]);
 
-    btn1P.innerText = 'Html';
-    btn2P.innerText = 'Bootstrap';
-    btn3P.innerText = 'Ruby on Rails';
-    textbtn1.textContent = 'See live';
-    textbtn2.textContent = 'See Source';
-    textPopUp.innerText = projectDisplay.popUpText;
-    titlePopUp.innerText = projectDisplay.title;
+  myTags[0].style.background = `linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(${projectDisplay.backgroundUrl})`;
+  myTags[0].style.backgroundSize = '100% 100%';
+
+  function OpenPopUp() {
+    const MyPopUpTags = [
+      {
+        name: 'btnsList',
+        class: 'btns_List',
+        type: 'div',
+      },
+      {
+        name: 'closeImg',
+        class: 'close_popUp',
+        type: 'img',
+        src: 'images/HideNavIcon.png',
+      },
+      {
+        name: 'closePopUp',
+        class: 'btn1_popUp',
+        type: 'button',
+      },
+      {
+        name: 'btn1PopUp',
+        class: 'btn1_popUp',
+        type: 'button',
+      },
+      {
+        name: 'btn2PopUp',
+        class: 'btn1_popUp',
+        type: 'button',
+      },
+      {
+        name: 'textPopUp',
+        class: 'p_popUp',
+        type: 'p',
+        texte: `${popUpText}`,
+      },
+      {
+        name: 'titlePopUp',
+        class: 'h1_popUp',
+        type: 'h2',
+        texte: `${title}`,
+      },
+      {
+        name: 'imagePopUp',
+        class: 'img_popUp',
+        type: 'img',
+        src: 'images/ImagePopUp.png',
+      },
+      {
+        name: 'githubIcon',
+        class: 'icon_popUp',
+        type: 'img',
+        src: 'images/GithubPopUp.png',
+      },
+      {
+        name: 'liveIcon',
+        class: 'icon_popUp',
+        type: 'img',
+        src: 'images/IconLivePopUp.png',
+      },
+      {
+        name: 'containerPopUp',
+        class: 'container_popUp',
+        type: 'div',
+      },
+      {
+        name: 'AlignFlexImg',
+        class: 'Align_FlexImg',
+        type: 'div',
+      },
+      {
+        name: 'textPopUpDiv',
+        class: 'q1',
+        type: 'div',
+      },
+      {
+        name: 'btn1P',
+        class: 'q2',
+        type: 'button',
+        texte: 'Html',
+      },
+      {
+        name: 'btn2P',
+        class: 'q2',
+        type: 'button',
+        texte: 'Bootstrap',
+      },
+      {
+        name: 'btn3P',
+        class: 'q2',
+        type: 'button',
+        texte: 'Ruby on Rails',
+      },
+      {
+        name: 'ulBtnP',
+        class: 'ul_btnP',
+        type: 'div',
+      },
+      {
+        name: 'textbtn1',
+        class: 'text_btn',
+        type: 'p',
+        texte: 'See live',
+      },
+      {
+        name: 'textbtn2',
+        class: 'text_btn',
+        type: 'p',
+        texte: 'See source',
+      },
+      {
+        name: 'titleAndIcon',
+        class: 'titile_and_icon',
+        type: 'div',
+      },
+
+    ];
+
+    function createPopUpTags() {
+      const output = [];
+      for (let i = 0; i < MyPopUpTags.length; i += 1) {
+        MyPopUpTags[i].name = document.createElement(MyPopUpTags[i].type);
+        MyPopUpTags[i].name.classList.add(MyPopUpTags[i].class);
+
+        if (Object.prototype.hasOwnProperty.call(MyPopUpTags[i], 'id')) {
+        // check if there is Id
+          MyPopUpTags[i].name.setAttribute('id', MyPopUpTags[i].id);
+        } else {
+          console.log(`No id on object ${MyPopUpTags[i].name} `);
+        }
+
+        if (Object.prototype.hasOwnProperty.call(MyPopUpTags[i], 'src')) {
+          MyPopUpTags[i].name.src = MyPopUpTags[i].src;
+        }// Check if theres Src
+
+        if (Object.prototype.hasOwnProperty.call(MyPopUpTags[i], 'texte')) {
+        // Check if there is innertext
+          MyPopUpTags[i].name.innerText = MyPopUpTags[i].texte;
+        } else {
+          console.log('No text on object ');
+        }
+
+        output.push(MyPopUpTags[i].name);
+      }
+
+      return output;
+    }
+
+    let popUpTagsArray = {};
+    popUpTagsArray = createPopUpTags();
+
+    console.log(popUpTagsArray);
+
+    // Up here the function
+    const containerPopUp = popUpTagsArray[10];
+
+    body.appendChild(popUpTagsArray[10]);
+    popUpTagsArray[10].append(popUpTagsArray[19], popUpTagsArray[16], popUpTagsArray[11]);
+    popUpTagsArray[19].append(popUpTagsArray[1], popUpTagsArray[6]);
+    popUpTagsArray[16].append(popUpTagsArray[13], popUpTagsArray[14], popUpTagsArray[15]);
+    popUpTagsArray[11].append(popUpTagsArray[7], popUpTagsArray[12]);
+    popUpTagsArray[12].append(popUpTagsArray[5], popUpTagsArray[0]);
+    popUpTagsArray[0].append(popUpTagsArray[2], popUpTagsArray[3]);
+    popUpTagsArray[2].append(popUpTagsArray[17], popUpTagsArray[9]);
+    popUpTagsArray[3].append(popUpTagsArray[18], popUpTagsArray[8]);
 
     section1.style.filter = 'blur(8px)';
     MainSectionproject.style.filter = 'blur(8px)';
@@ -206,7 +372,7 @@ function displayPrjct(title, description, backgroundUrl, idHtml) {
     sectionAbout.style.pointerEvents = 'none';
     contactForm.style.pointerEvents = 'none';
 
-    closeImg.addEventListener('click', () => {
+    popUpTagsArray[1].addEventListener('click', () => {
       containerPopUp.style.display = 'none';
       section1.style.filter = 'none';
       MainSectionproject.style.filter = 'none';
@@ -221,20 +387,81 @@ function displayPrjct(title, description, backgroundUrl, idHtml) {
       sectionAbout.style.pointerEvents = 'all';
       contactForm.style.pointerEvents = 'all';
     });
+  }
+
+  myTags[10].addEventListener('click', OpenPopUp);
+  myTags[11].addEventListener('click', OpenPopUp);
+
+  sectionMultiple.addEventListener('mouseover', () => {
+    btnEnSectionMDesk.style.display = 'block';
   });
 
-  if (window.screen.width > 767) {
-    btnEnSectionM.style.display = 'none';
-    sectionMultiple.addEventListener('mouseover', () => {
-      btnEnSectionM.style.display = 'block';
-    });
+  sectionMultiple.addEventListener('mouseleave', () => {
+    btnEnSectionMDesk.style.display = 'none';
+  });
+}
 
-    sectionMultiple.addEventListener('mouseleave', () => {
-      btnEnSectionM.style.display = 'none';
-    });
-  } else {
-    btnEnSectionM.style.display = 'block';
+function wrapProjectsCards() {
+  const cards = [
+    {
+      title: 'Profesional Art Printing Data More',
+      description:
+        'Ipsum has been the industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type',
+      popUptext:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      backgroundUrl: './images/portfolioBackground.png',
+    },
+    {
+      title: 'Data Dashboard Healthcare',
+      description:
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industrys',
+      popUptext:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      backgroundUrl: './images/portfolioBackground.png',
+    },
+    {
+      title: 'Website Protfolio',
+      description:
+        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+      popUptext:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      backgroundUrl: './images/portfolioBackground.png',
+    },
+    {
+      title: 'Profesional Art Printing Data More',
+      description:
+        'Ipsum has been the industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type',
+      popUptext:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      backgroundUrl: './images/portfolioBackground.png',
+    },
+    {
+      title: 'Data Dashboard Healthcare',
+      description:
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industrys',
+      popUptext:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      backgroundUrl: './images/portfolioBackground.png',
+    },
+    {
+      title: 'Website Protfolio',
+      description:
+        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+      popUptext:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      backgroundUrl: './images/portfolioBackground.png',
+    },
+  ];
+
+  for (let a = 0; a < cards.length; a += 1) {
+    const titleCard = cards[a].title;
+    const descriptionCard = cards[a].description;
+    const textPopUpCard = cards[a].popUptext;
+    const htmlIdCard = a + 1;
+    const backgroundCard = cards[a].backgroundUrl;
+
+    displayPrjct(titleCard, descriptionCard, textPopUpCard, backgroundCard, htmlIdCard);
   }
 }
 
-displayPrjct();
+wrapProjectsCards();
