@@ -1047,3 +1047,16 @@ h3 {
   padding-top: 8px;
   border: none;
 }
+
+.btn_M_enDesk:hover {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
+} 
