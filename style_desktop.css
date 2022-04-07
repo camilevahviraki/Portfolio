@@ -373,8 +373,8 @@ h3 {
   display: flex !important;
 }
 
-#btnEnSectionMDesk1:hover{
-  display:  flex !important;
+#btnEnSectionMDesk1:hover {
+  display: flex !important;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
