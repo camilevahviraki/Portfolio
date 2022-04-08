@@ -1060,3 +1060,9 @@ h3 {
   border: 1px solid #f55800;
   box-sizing: border-box;
 }
+
+#error_message {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
