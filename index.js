@@ -459,9 +459,31 @@ function wrapProjectsCards() {
     const textPopUpCard = cards[a].popUptext;
     const htmlIdCard = a + 1;
     const backgroundCard = cards[a].backgroundUrl;
+    localStorage.setItem(titleCard, `${backgroundCard}`);
 
     displayPrjct(titleCard, descriptionCard, textPopUpCard, backgroundCard, htmlIdCard);
   }
+
+  console.log(localStorage.key(1));
 }
 
 wrapProjectsCards();
+
+function val() {
+  const Inputmail = document.querySelector('#Mail_Input');
+  const messageErr = document.getElementById('error_message');
+
+  if (Inputmail.value !== Inputmail.value.toLowerCase()) {
+    messageErr.textContent = 'Please, use lowercases letters!';
+    messageErr.style.color = 'blue';
+    return false;
+  }
+  messageErr.textContent = 'Well done!';
+  messageErr.style.color = 'green';
+  setTimeout(() => {
+    messageErr.textContent = 'Well done!';
+  }, 3000);
+  return true;
+}
+
+val();
