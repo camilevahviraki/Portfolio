@@ -459,12 +459,9 @@ function wrapProjectsCards() {
     const textPopUpCard = cards[a].popUptext;
     const htmlIdCard = a + 1;
     const backgroundCard = cards[a].backgroundUrl;
-    localStorage.setItem(titleCard, `${backgroundCard}`);
 
     displayPrjct(titleCard, descriptionCard, textPopUpCard, backgroundCard, htmlIdCard);
   }
-
-  console.log(localStorage.key(1));
 }
 
 wrapProjectsCards();
