@@ -469,6 +469,19 @@ wrapProjectsCards();
 function val() {
   const Inputmail = document.querySelector('#Mail_Input');
   const messageErr = document.getElementById('error_message');
+  const mailVal = Inputmail.value;
+  const nameVal = document.getElementById('name').value;
+  const textVal = document.getElementById('text_arr').value;
+
+  const objectStored = {
+    name: `${mailVal}`,
+    email: `${nameVal}`,
+    textVal: `${textVal}`,
+  };
+  const storageLength = localStorage.length;
+
+  localStorage.setItem(`personne${storageLength}`, JSON.stringify(objectStored));
+  console.log(JSON.parse(localStorage.key(2)));
 
   if (Inputmail.value !== Inputmail.value.toLowerCase()) {
     messageErr.textContent = 'Please, use lowercases letters!';
