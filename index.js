@@ -473,16 +473,11 @@ function val() {
   const nameVal = document.getElementById('name').value;
   const textVal = document.getElementById('text_arr').value;
 
-  const objectStored = {
-    name: `${mailVal}`,
-    email: `${nameVal}`,
-    textVal: `${textVal}`,
-  };
-  const storageLength = localStorage.length;
-
-  localStorage.setItem(`personne${storageLength}`, JSON.stringify(objectStored));
-  console.log(JSON.parse(localStorage.key(2)));
-
+  if (textVal <= 1 || nameVal <= 1 || mailVal <= 1) {
+    messageErr.textContent = 'Please, all fields required!';
+    messageErr.style.color = 'brown';
+    return false;
+  }
   if (Inputmail.value !== Inputmail.value.toLowerCase()) {
     messageErr.textContent = 'Please, use lowercases letters!';
     messageErr.style.color = 'blue';
