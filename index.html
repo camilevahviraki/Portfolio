@@ -77,7 +77,7 @@
       </ul>
     </nav>
     <section class="section1" id="section1">
-      <div class="p_section12" id= "p_section12">
+      <div class="p_section12" id="p_section12">
         <h1 class="h1_1">Hey there. I'm Camile</h1>
 
         <h3 class="h3_title">I’am a Software Developer</h3>
@@ -237,7 +237,11 @@
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
         </p>
-        <form action="https://formspree.io/f/xgedzqjv" method="POST" id="signup">
+        <form
+          action="https://formspree.io/f/xgedzqjv"
+          method="POST"
+          id="signup"
+        >
           <ul class="form_list">
             <li>
               <input
@@ -245,6 +249,7 @@
                 name="name"
                 placeholder="Full name"
                 maxlength="30"
+                id="name"
                 required
               />
             </li>
@@ -253,6 +258,7 @@
                 type="email"
                 name="email"
                 placeholder="Email adress"
+                id="Mail_Input"
                 required
               />
             </li>
@@ -261,11 +267,12 @@
                 name="message"
                 placeholder="Enter text here"
                 maxlength="500"
+                id="text_arr"
                 required
               ></textarea>
             </li>
             <li>
-              <button class="butn_submit" type="submit">Get in touch</button>
+              <button class="butn_submit" type="submit" onclick="return val();">Get in touch</button>
               <p id="error_message"></p>
             </li>
           </ul>

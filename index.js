@@ -465,3 +465,30 @@ function wrapProjectsCards() {
 }
 
 wrapProjectsCards();
+
+function val() {
+  const Inputmail = document.querySelector('#Mail_Input');
+  const messageErr = document.getElementById('error_message');
+  const mailVal = Inputmail.value;
+  const nameVal = document.getElementById('name').value;
+  const textVal = document.getElementById('text_arr').value;
+
+  if (textVal <= 1 || nameVal <= 1 || mailVal <= 1) {
+    messageErr.textContent = 'Please, all fields are required!';
+    messageErr.style.color = 'brown';
+    return false;
+  }
+  if (Inputmail.value !== Inputmail.value.toLowerCase()) {
+    messageErr.textContent = 'Please, use lowercases letters!';
+    messageErr.style.color = 'blue';
+    return false;
+  }
+  messageErr.textContent = 'Well done!';
+  messageErr.style.color = 'green';
+  setTimeout(() => {
+    messageErr.textContent = 'Well done!';
+  }, 3000);
+  return true;
+}
+
+val();
