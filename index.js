@@ -474,7 +474,7 @@ function val() {
   const textVal = document.getElementById('text_arr').value;
 
   if (textVal <= 1 || nameVal <= 1 || mailVal <= 1) {
-    messageErr.textContent = 'Please, all fields required!';
+    messageErr.textContent = 'Please, all fields are required!';
     messageErr.style.color = 'brown';
     return false;
   }
