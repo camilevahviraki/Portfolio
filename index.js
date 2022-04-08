@@ -505,7 +505,7 @@ function val() {
 
   setTimeout(() => {
     messageErr.textContent = 'Well done!';
-  }, 6000);
+  }, 600);
   return true;
 }
 
