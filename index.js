@@ -3,7 +3,7 @@ function showNav() {
   const UnionIcon = document.getElementById('UnionIcon');
   const navClass = document.getElementsByClassName('nav_list');
   const pngList = document.getElementsByClassName('links_png');
-  const logo1 = document.querySelector('a');
+  const logo1 = document.getElementById('logo1');
   const section12 = document.getElementById('p_section12');
   const hideNav1 = document.getElementById('clickMe2');
   const showNav1 = document.getElementById('clickMe1');
@@ -27,8 +27,6 @@ function showNav() {
   for (let a = 0; a < navClassIl.length; a += 1) {
     navClassIl[a].style.padding = '16px';
   }
-
-  console.log('NavBar available');
 }
 
 function hideNav() {
@@ -54,8 +52,6 @@ function hideNav() {
     pngList[i].style.margin = '6px 0 6px 0';
     navClass[i].style.display = 'none';
   }
-
-  console.log('NavBar Hiden');
 }
 
 showNav();
@@ -155,14 +151,10 @@ function displayPrjct(title, description, popUpText, backgroundUrl, idHtml) {
 
       if (Object.prototype.hasOwnProperty.call(AllTags[i], 'id')) {
         AllTags[i].name.setAttribute('id', AllTags[i].id);
-      } else {
-        console.log(`No id on object ${AllTags[i].name} `);
       }
 
       if (Object.prototype.hasOwnProperty.call(AllTags[i], 'texte')) {
         AllTags[i].name.innerText = AllTags[i].texte;
-      } else {
-        console.log('No text on object ');
       }
 
       output.push(AllTags[i].name);
@@ -172,7 +164,6 @@ function displayPrjct(title, description, popUpText, backgroundUrl, idHtml) {
   }
   let myTags = {};
   myTags = createEveryTag();
-  console.log(myTags);
 
   const projectDisplay = {
     idHtml,
@@ -319,8 +310,6 @@ function displayPrjct(title, description, popUpText, backgroundUrl, idHtml) {
         if (Object.prototype.hasOwnProperty.call(MyPopUpTags[i], 'id')) {
         // check if there is Id
           MyPopUpTags[i].name.setAttribute('id', MyPopUpTags[i].id);
-        } else {
-          console.log(`No id on object ${MyPopUpTags[i].name} `);
         }
 
         if (Object.prototype.hasOwnProperty.call(MyPopUpTags[i], 'src')) {
@@ -330,8 +319,6 @@ function displayPrjct(title, description, popUpText, backgroundUrl, idHtml) {
         if (Object.prototype.hasOwnProperty.call(MyPopUpTags[i], 'texte')) {
         // Check if there is innertext
           MyPopUpTags[i].name.innerText = MyPopUpTags[i].texte;
-        } else {
-          console.log('No text on object ');
         }
 
         output.push(MyPopUpTags[i].name);
@@ -342,8 +329,6 @@ function displayPrjct(title, description, popUpText, backgroundUrl, idHtml) {
 
     let popUpTagsArray = {};
     popUpTagsArray = createPopUpTags();
-
-    console.log(popUpTagsArray);
 
     // Up here the function
     const containerPopUp = popUpTagsArray[10];
@@ -453,6 +438,21 @@ function wrapProjectsCards() {
     },
   ];
 
+  function getForm() {
+    if (localStorage.length !== 0) {
+      const valuesStored = JSON.parse(
+        localStorage.getItem('formValues'),
+      );
+
+      console.log(valuesStored);
+      document.getElementById('name').value = valuesStored.name;
+      document.querySelector('#Mail_Input').value = valuesStored.email;
+      document.getElementById('text_arr').value = valuesStored.message;
+    } else {
+      console.log('no item fund!');
+    }
+  }
+
   for (let a = 0; a < cards.length; a += 1) {
     const titleCard = cards[a].title;
     const descriptionCard = cards[a].description;
@@ -462,16 +462,29 @@ function wrapProjectsCards() {
 
     displayPrjct(titleCard, descriptionCard, textPopUpCard, backgroundCard, htmlIdCard);
   }
+  getForm();
 }
 
 wrapProjectsCards();
 
+// Get storage
+
+// End get storage
 function val() {
   const Inputmail = document.querySelector('#Mail_Input');
-  const messageErr = document.getElementById('error_message');
   const mailVal = Inputmail.value;
   const nameVal = document.getElementById('name').value;
   const textVal = document.getElementById('text_arr').value;
+  const messageErr = document.getElementById('error_message');
+
+  // here localStorage
+
+  const formStorage = {
+    name: '',
+    email: '',
+    message: '',
+  };
+  // UpHereLocalStorage
 
   if (textVal <= 1 || nameVal <= 1 || mailVal <= 1) {
     messageErr.textContent = 'Please, all fields are required!';
@@ -485,9 +498,19 @@ function val() {
   }
   messageErr.textContent = 'Well done!';
   messageErr.style.color = 'green';
+
+  // Insert localstorage values
+
+  formStorage.name = nameVal;
+  formStorage.email = mailVal;
+  formStorage.message = textVal;
+
+  localStorage.setItem('formValues', JSON.stringify(formStorage));
+  console.log(JSON.stringify(formStorage));
+
   setTimeout(() => {
     messageErr.textContent = 'Well done!';
-  }, 3000);
+  }, 600);
   return true;
 }
 
