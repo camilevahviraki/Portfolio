@@ -438,6 +438,21 @@ function wrapProjectsCards() {
     },
   ];
 
+  function getForm() {
+    if (localStorage.length !== 0) {
+      const valuesStored = JSON.parse(
+        localStorage.getItem('formValues'),
+      );
+
+      console.log(valuesStored);
+      document.getElementById('name').value = valuesStored.name;
+      document.querySelector('#Mail_Input').value = valuesStored.email;
+      document.getElementById('text_arr').value = valuesStored.message;
+    } else {
+      console.log('no item fund!');
+    }
+  }
+
   for (let a = 0; a < cards.length; a += 1) {
     const titleCard = cards[a].title;
     const descriptionCard = cards[a].description;
@@ -447,23 +462,13 @@ function wrapProjectsCards() {
 
     displayPrjct(titleCard, descriptionCard, textPopUpCard, backgroundCard, htmlIdCard);
   }
+  getForm();
 }
 
 wrapProjectsCards();
 
 // Get storage
-if (localStorage.length !== 0) {
-  const valuesStored = JSON.parse(
-    localStorage.getItem('formValues'),
-  );
 
-  console.log('Items fund');
-  document.getElementById('name').value = valuesStored.name;
-  document.querySelector('#Mail_Input').value = valuesStored.email;
-  document.getElementById('text_arr').value = valuesStored.message;
-} else {
-  console.log('no item fund!');
-}
 // End get storage
 function val() {
   const Inputmail = document.querySelector('#Mail_Input');
