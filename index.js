@@ -342,7 +342,7 @@ function displayPrjct(title, description, popUpText, backgroundUrl, idHtml) {
     popUpTagsArray[0].append(popUpTagsArray[2], popUpTagsArray[3]);
     popUpTagsArray[2].append(popUpTagsArray[17], popUpTagsArray[9]);
     popUpTagsArray[3].append(popUpTagsArray[18], popUpTagsArray[8]);
-
+    
     section1.style.filter = 'blur(8px)';
     MainSectionproject.style.filter = 'blur(8px)';
     sectionAbout.style.filter = 'blur(8px)';
@@ -435,6 +435,14 @@ function wrapProjectsCards() {
       popUptext:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
       backgroundUrl: './images/portfolioBackground.png',
+    },
+    {
+      title: 'To do list App',
+      description:
+        'This project is a minimalist app which has a purpose to store the daily task of poeple',
+      popUptext:
+        "This project is a minimalist app which has a purpose to store the daily task of poeple, It has some functionality like to store data in localStorage and to delete selected tasks.",
+      backgroundUrl: './images/to-do-list-app.jpg',
     },
   ];
 
