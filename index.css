@@ -11,7 +11,7 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 48px;
   left: 0;
@@ -83,7 +83,7 @@ nav {
 }
 
 .section1 {
-  min-height: calc(100vw * 1.778);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -5,13 +5,13 @@
 
 > This is my personnal portfolio, feel free to check it out.
 
+<img src="Devices/desktop(1).png" alt=""/>
+
 
 ## Built With
 
 - Html
 - Css
-
-
 
  ## Getting Started
 
@@ -23,7 +23,7 @@ To get a local copy up and running follow these simple example steps.
 - write `git clone https://github.com/camilevahviraki/Portfolio.git`.
 - go to the repository folder in your command prompt `cd Portfolio`
 
-You can also type this [Link](https://camilevahviraki.github.io/Portfolio/) to see 
+You can also type [this Link](https://camilevahviraki.github.io/Portfolio/) to see 
 the live demo of my personnal Portfolio.
 
 
